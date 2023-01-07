@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+//put a rigidbody on the pickable item, a pickable layer mask and put the angular drag and drag to 2
 public class PickUpScript : MonoBehaviour
 {
     public LayerMask pickableLayer;
@@ -40,7 +42,7 @@ public class PickUpScript : MonoBehaviour
                 isPickingUp = true;
                 RaycastHit hit;
                 Debug.DrawRay(camera.transform.position, camera.forward * reach, Color.red,1f);
-                if(Physics.Raycast(camera.transform.position, camera.forward, out hit, reach, ~pickableLayer)){
+                if(Physics.Raycast(camera.transform.position, camera.forward, out hit, reach, pickableLayer)){
                     Debug.Log("hit");
                     //Pick Up
                     Vector3 pointPos = camera.transform.position+camera.transform.forward*3;

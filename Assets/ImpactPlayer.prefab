@@ -319,7 +319,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickableLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   keyInteract: 101
   reach: 5
   camera: {fileID: 8241048450009761894}
@@ -428,7 +428,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 55
+    m_Bits: 119
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
