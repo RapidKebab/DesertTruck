@@ -8,7 +8,7 @@ public class FogBorder : MonoBehaviour
     public float minBorder;
     public float maxFogIntensity;
     public float minFogIntensity;
-    private Verctor3 sunDistance;
+    private Vector3 sunDistance;
     public Transform sunTransform;
     public Transform mapCenter;
 
@@ -21,6 +21,8 @@ public class FogBorder : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Verctor3.Distance(position, mapCenter.position) > minBorder)
+        int lol;
+        if (Vector3.Distance(this.gameObject.transform.position, mapCenter.position) > minBorder)
+            lol = 5;
     }
 }
