@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 534655443900551175}
   - component: {fileID: 8438758621925492087}
   - component: {fileID: 534655443900551174}
+  - component: {fileID: 8891720016678582424}
   m_Layer: 0
   m_Name: ImpactPlayer
   m_TagString: Player
@@ -36,7 +37,7 @@ Transform:
   - {fileID: 493248272829195142}
   - {fileID: 8241048450009761894}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6099484247029127820
 MonoBehaviour:
@@ -304,6 +305,26 @@ MonoBehaviour:
   jumpingSound: {fileID: 8300000, guid: 9f8d6a39ba082464da5472aaa0403351, type: 3}
   landingSound: {fileID: 8300000, guid: 2107fe5da028e694391acb525dc82402, type: 3}
   overrideFootsteps: 0
+--- !u!114 &8891720016678582424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 48214201311826467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 173682e8f8438ca4193583f4b6b81e4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pickableLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  keyInteract: 101
+  reach: 5
+  camera: {fileID: 8241048450009761894}
+  pickUpPoint: {fileID: 7812560937965756323, guid: 3fd29e03e6a686a42b2bed1b417fb749,
+    type: 3}
 --- !u!1 &5981296677794364326
 GameObject:
   m_ObjectHideFlags: 0
