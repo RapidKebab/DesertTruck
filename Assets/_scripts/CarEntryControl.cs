@@ -6,6 +6,7 @@ public class CarEntryControl : MonoBehaviour
 {
     [HideInInspector] public bool inCar;
     public Transform carExit;
+    public GameObject playerCam;
     public GameObject carCam;
     public GameObject player;
     public RCC_CarControllerV3 car;
@@ -35,6 +36,7 @@ public class CarEntryControl : MonoBehaviour
             car.canControl = true;
             carCam.SetActive(true);
             player.SetActive(false);
+            playerCam.SetActive(false);
             inCar = true;
         }
         else {
@@ -43,6 +45,7 @@ public class CarEntryControl : MonoBehaviour
             car.canControl = false;
             carCam.SetActive(false);
             player.SetActive(true);
+            playerCam.SetActive(true);
             inCar = false;
         }
     }
