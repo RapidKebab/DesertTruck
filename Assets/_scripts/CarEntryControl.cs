@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CarEntryControl : MonoBehaviour
 {
-    bool inCar;
+    [HideInInspector] public bool inCar;
     public Transform carExit;
     public GameObject carCam;
     public GameObject player;

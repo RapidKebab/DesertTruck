@@ -6,7 +6,7 @@ using UnityEngine;
 //put a rigidbody on the pickable item, a pickable layer mask and put the angular drag and drag to 2
 public class PickUpScript : MonoBehaviour
 {
-    public LayerMask pickableLayer;
+    public LayerMask layers;
     public KeyCode keyInteract = KeyCode.E;
     public float reach;
     public Transform camera;
@@ -14,6 +14,7 @@ public class PickUpScript : MonoBehaviour
     public GameObject pickUpPoint;
     private GameObject point;
     private bool isPickingUp;
+    public CarEntryControl carMgr;
     // public KeyCode keyInteract = KeyCode.E;
     
     // Start is called before the first frame update
@@ -39,18 +40,25 @@ public class PickUpScript : MonoBehaviour
                 GameObject.Destroy(point);
             }
             else{
-                isPickingUp = true;
                 RaycastHit hit;
                 Debug.DrawRay(camera.transform.position, camera.forward * reach, Color.red,1f);
-                if(Physics.Raycast(camera.transform.position, camera.forward, out hit, reach, pickableLayer)){
-                    Debug.Log("hit");
-                    //Pick Up
-                    Vector3 pointPos = camera.transform.position+camera.transform.forward*3;
-                    point = GameObject.Instantiate(pickUpPoint, pointPos, transform.rotation, camera);
+                if(Physics.Raycast(camera.transform.position, camera.forward, out hit, reach,layers)){
+                    Debug.Log(hit.transform.name);
+                    if (hit.transform.gameObject.tag == "pickup")
+                    {
+                        isPickingUp = true;
+                        Debug.Log("hit");
+                        //Pick Up
+                        Vector3 pointPos = camera.transform.position + camera.transform.forward * 3;
+                        point = GameObject.Instantiate(pickUpPoint, pointPos, transform.rotation, camera);
 
-                    springJoint = point.GetComponent<SpringJoint>();
-                    springJoint.connectedBody = hit.rigidbody;
-                    Debug.Log(springJoint.connectedBody);
+                        springJoint = point.GetComponent<SpringJoint>();
+                        springJoint.connectedBody = hit.rigidbody;
+                        Debug.Log(springJoint.connectedBody);
+                    }
+                    if (hit.collider.tag == "enterable") {
+                        carMgr.Swap();
+                    }
                 }
             }
         }

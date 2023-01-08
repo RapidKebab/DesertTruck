@@ -37,6 +37,8 @@ public class RCC_CameraEditor : Editor {
         EditorGUILayout.Space();
         EditorGUILayout.PropertyField(serializedObject.FindProperty("pivot"), new GUIContent("Pivot of the Camera", "Pivot of the Camera."), false);
         EditorGUILayout.Space();
+        EditorGUILayout.PropertyField(serializedObject.FindProperty("actualCamera"), new GUIContent("the Cam", "the Cam."), false);
+        EditorGUILayout.Space();
         EditorGUILayout.EndVertical();
 
         EditorGUILayout.Space();

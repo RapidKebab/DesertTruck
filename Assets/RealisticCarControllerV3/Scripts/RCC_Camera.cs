@@ -180,7 +180,7 @@ public class RCC_Camera : MonoBehaviour {
     private void Awake() {
 
         // Getting Camera.
-        actualCamera = GetComponentInChildren<Camera>();
+        //actualCamera = GetComponentInChildren<Camera>();
 
         if (!pivot) {
 
