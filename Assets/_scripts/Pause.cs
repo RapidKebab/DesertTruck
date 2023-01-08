@@ -8,6 +8,11 @@ public class Pause : MonoBehaviour
     bool paused = false;
     public GameObject[] pauseMenu;
     // Update is called once per frame
+    private void Start()
+    {
+        Time.timeScale = 1f;
+    }
+
     void Update()
     {
         if (Input.GetButtonDown("Cancel"))
