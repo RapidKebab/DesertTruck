@@ -1483,31 +1483,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ute
       objectReference: {fileID: 0}
-    - target: {fileID: 7505268524623883364, guid: 31b871f59a1c44446a55d0d175e9b04a,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7505268524623883365, guid: 31b871f59a1c44446a55d0d175e9b04a,
-        type: 3}
-      propertyPath: engineClipLow
-      value: 
-      objectReference: {fileID: 8300000, guid: 60b6421e433825445872f054d625b2f7, type: 3}
-    - target: {fileID: 7505268524623883365, guid: 31b871f59a1c44446a55d0d175e9b04a,
-        type: 3}
-      propertyPath: engineClipMed
-      value: 
-      objectReference: {fileID: 8300000, guid: 79ac807ebdfd0a34687489ca7159f30a, type: 3}
-    - target: {fileID: 7505268524623883365, guid: 31b871f59a1c44446a55d0d175e9b04a,
-        type: 3}
-      propertyPath: engineClipHigh
-      value: 
-      objectReference: {fileID: 8300000, guid: 11b8d68de272edd428b21db3ab991f36, type: 3}
-    - target: {fileID: 7505268524623883365, guid: 31b871f59a1c44446a55d0d175e9b04a,
-        type: 3}
-      propertyPath: engineClipIdle
-      value: 
-      objectReference: {fileID: 8300000, guid: 1d5cb00ddfe8c954a8d4be69132af332, type: 3}
     - target: {fileID: 7505268524623883366, guid: 31b871f59a1c44446a55d0d175e9b04a,
         type: 3}
       propertyPath: ce

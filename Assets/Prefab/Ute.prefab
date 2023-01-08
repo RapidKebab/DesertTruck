@@ -1876,7 +1876,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 1
   m_Constraints: 0
-  m_CollisionDetection: 1
+  m_CollisionDetection: 2
 --- !u!114 &7505268524623883365
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2048,10 +2048,10 @@ MonoBehaviour:
   audioType: 2
   autoCreateEngineOffSounds: 1
   engineStartClip: {fileID: 0}
-  engineClipHigh: {fileID: 8300000, guid: 9cbb60cabb359d345916960af3221023, type: 3}
+  engineClipHigh: {fileID: 8300000, guid: 11b8d68de272edd428b21db3ab991f36, type: 3}
   engineClipMed: {fileID: 8300000, guid: 79ac807ebdfd0a34687489ca7159f30a, type: 3}
-  engineClipLow: {fileID: 8300000, guid: d49d23caac81ff5448552dc3faba0667, type: 3}
-  engineClipIdle: {fileID: 8300000, guid: d55198aa72941f84187208f1ddfa468c, type: 3}
+  engineClipLow: {fileID: 8300000, guid: 60b6421e433825445872f054d625b2f7, type: 3}
+  engineClipIdle: {fileID: 8300000, guid: 1d5cb00ddfe8c954a8d4be69132af332, type: 3}
   engineClipHighOff: {fileID: 0}
   engineClipMedOff: {fileID: 0}
   engineClipLowOff: {fileID: 0}
