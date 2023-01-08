@@ -46,10 +46,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _DepthAmplifier: 0.036
+    - _DepthAmplifier: 0.013
     - _DistanceLimit: 0
     - _DistortionAmplifiar: 0.0105
-    - _DistortionAmplifier: 0.0117
-    - _DistortionSpeed: 0.0278
+    - _DistortionAmplifier: 0.0163
+    - _DistortionSpeed: 0.0451
     m_Colors: []
   m_BuildTextureStacks: []
