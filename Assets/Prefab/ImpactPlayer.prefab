@@ -319,7 +319,7 @@ Transform:
   - {fileID: 5007200635235379991}
   - {fileID: 3601592332007733940}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 31.068, z: 0}
 --- !u!114 &1657536152013148701
 MonoBehaviour:
@@ -404,7 +404,7 @@ MonoBehaviour:
   restrainCameraPositioning: 0
   cameraSensitivity: 1
   screenshakeDecayFactor: 0.2
-  verticalRestraint: {x: -90, y: 90}
+  verticalRestraint: {x: -60, y: 60}
   screenshake: 0
   lookTarget: {fileID: 0}
   perspective: 0
@@ -582,8 +582,9 @@ MonoBehaviour:
   enableSounds: 1
   soundVolume: 1
   walkSounds:
-  - {fileID: 8300000, guid: 5a797ecb4a714b94a8aae85069b99a55, type: 3}
-  - {fileID: 8300000, guid: 7f6bdfc048084a7409fe0a5c84727d77, type: 3}
+  - {fileID: 8300000, guid: 3e7a1327c383f2d4a801bea9e438f044, type: 3}
+  - {fileID: 8300000, guid: cb9f2ea1e592a8e4ea987ac0613a50f4, type: 3}
+  - {fileID: 8300000, guid: 4af68d5fb8c73b74b854f47911ed0ff8, type: 3}
   jumpingSound: {fileID: 8300000, guid: 9f8d6a39ba082464da5472aaa0403351, type: 3}
   landingSound: {fileID: 8300000, guid: 2107fe5da028e694391acb525dc82402, type: 3}
   overrideFootsteps: 0

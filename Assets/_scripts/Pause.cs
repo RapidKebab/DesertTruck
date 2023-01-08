@@ -8,6 +8,11 @@ public class Pause : MonoBehaviour
     bool paused = false;
     public GameObject[] pauseMenu;
     // Update is called once per frame
+    private void Start()
+    {
+        Time.timeScale = 1f;
+    }
+
     void Update()
     {
         if (Input.GetButtonDown("Cancel"))
@@ -23,6 +28,15 @@ public class Pause : MonoBehaviour
                 m.SetActive(false);
             }
             SceneManager.LoadScene(0);
+        }
+        if(Input.GetKeyDown(KeyCode.R)&& paused) {
+            Time.timeScale = 1;
+            paused = false;
+            foreach (GameObject m in pauseMenu)
+            {
+                m.SetActive(false);
+            }
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 
