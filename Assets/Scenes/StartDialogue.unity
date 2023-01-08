@@ -240,17 +240,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   str:
-  - 123456789123456789123456789
-  - qwertyuioqwertyuioqwertyuio
-  - qwertyuioqwertyuioqwertyuio
-  - qwertyuioqwertyuioqwertyuio
+  - Hey, I heard from my friend that you are a great truck driver!
+  - Its their birthday today, so I made a cake for them.
+  - Here, I put the cake in this cardboard box.
+  - '*presents the cake*'
+  - Could you deliver the cake to their house?
+  - Thanks! Their house is only in the other side of the desert.
+  - Just follow path, it will bring you to his house.
+  - Make sure you dont drop the cake too much, it will break apart!
+  - Good luck!
   Title: {fileID: 823116976}
   AudioSource: {fileID: 823116978}
   click: {fileID: 8300000, guid: 66df2d8921b886347906556b51708d12, type: 3}
-  speed: 0.001
+  speed: 0.0002
   speed2: 0.001
   image: {fileID: 867562069}
   sequenceOfImage:
+  - {fileID: 21300000, guid: 2cb9b0751a6f3894cbb341397df33b13, type: 3}
+  - {fileID: 21300000, guid: b8244954698b19a45814d8b463c54465, type: 3}
+  - {fileID: 21300000, guid: b8244954698b19a45814d8b463c54465, type: 3}
+  - {fileID: 21300000, guid: 9133966161fea614bafc8b524cb5e41e, type: 3}
+  - {fileID: 21300000, guid: 0875a8956f08d364aa630c9e01b923d0, type: 3}
   - {fileID: 21300000, guid: 2cb9b0751a6f3894cbb341397df33b13, type: 3}
   - {fileID: 21300000, guid: b8244954698b19a45814d8b463c54465, type: 3}
   - {fileID: 21300000, guid: 0875a8956f08d364aa630c9e01b923d0, type: 3}
@@ -824,7 +834,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a7abbb963b5c24f43a5fd42d3d80ecef, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2cb9b0751a6f3894cbb341397df33b13, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
