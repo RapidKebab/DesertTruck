@@ -8,7 +8,7 @@ public class PickUpScript : MonoBehaviour
 {
     public LayerMask layers;
     public KeyCode keyInteract = KeyCode.E;
-    public float reach;
+    public float reach = 2.5f;
     public Transform camera;
     private SpringJoint springJoint;
     public GameObject pickUpPoint;
@@ -49,7 +49,7 @@ public class PickUpScript : MonoBehaviour
                         isPickingUp = true;
                         Debug.Log("hit");
                         //Pick Up
-                        Vector3 pointPos = camera.transform.position + camera.transform.forward * 3;
+                        Vector3 pointPos = camera.transform.position + camera.transform.forward * 2f;
                         point = GameObject.Instantiate(pickUpPoint, pointPos, transform.rotation, camera);
 
                         springJoint = point.GetComponent<SpringJoint>();

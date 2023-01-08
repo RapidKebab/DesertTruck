@@ -37,8 +37,8 @@ MonoBehaviour:
       type: 3}
     deflate: 0
   - groundMaterial: {fileID: 13400000, guid: 1d81794eea45227458aa2965af4b201d, type: 2}
-    forwardStiffness: 0.5
-    sidewaysStiffness: 1
+    forwardStiffness: 0.7
+    sidewaysStiffness: 0.6
     slip: 0.05
     damp: 2
     volume: 0.5
