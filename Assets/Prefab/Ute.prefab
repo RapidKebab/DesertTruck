@@ -1848,7 +1848,7 @@ Transform:
   - {fileID: 7505268524090446576}
   - {fileID: 7505268523903089304}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &7505268524623883364
 Rigidbody:
@@ -1915,7 +1915,7 @@ MonoBehaviour:
   steeringWheelAngleMultiplier: 11
   wheelTypeChoise: 1
   externalController: 0
-  steeringType: 0
+  steeringType: 1
   steerAngleCurve:
     serializedVersion: 2
     m_Curve:
@@ -1949,9 +1949,9 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  steerAngle: 40
-  highspeedsteerAngle: 5
-  highspeedsteerAngleAtspeed: 120
+  steerAngle: 75
+  highspeedsteerAngle: 10
+  highspeedsteerAngleAtspeed: 240
   antiRollFrontHorizontal: 800
   antiRollRearHorizontal: 800
   antiRollVertical: 0

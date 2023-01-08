@@ -29,6 +29,15 @@ public class Pause : MonoBehaviour
             }
             SceneManager.LoadScene(0);
         }
+        if(Input.GetKeyDown(KeyCode.R)&& paused) {
+            Time.timeScale = 1;
+            paused = false;
+            foreach (GameObject m in pauseMenu)
+            {
+                m.SetActive(false);
+            }
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
     }
 
     public void PauseSwap()
