@@ -246,15 +246,15 @@ MonoBehaviour:
   - qwertyuioqwertyuioqwertyuio
   Title: {fileID: 823116976}
   AudioSource: {fileID: 823116978}
-  click: {fileID: 0}
-  speed: 0.0001
+  click: {fileID: 8300000, guid: 66df2d8921b886347906556b51708d12, type: 3}
+  speed: 0.001
   speed2: 0.001
   image: {fileID: 867562069}
   sequenceOfImage:
-  - {fileID: 21300000, guid: a7abbb963b5c24f43a5fd42d3d80ecef, type: 3}
-  - {fileID: 21300000, guid: a7abbb963b5c24f43a5fd42d3d80ecef, type: 3}
-  - {fileID: 21300000, guid: b8fedfa7b13d5a84a8cf923112b1d6a1, type: 3}
-  - {fileID: 21300000, guid: a7abbb963b5c24f43a5fd42d3d80ecef, type: 3}
+  - {fileID: 21300000, guid: 2cb9b0751a6f3894cbb341397df33b13, type: 3}
+  - {fileID: 21300000, guid: b8244954698b19a45814d8b463c54465, type: 3}
+  - {fileID: 21300000, guid: 0875a8956f08d364aa630c9e01b923d0, type: 3}
+  - {fileID: 21300000, guid: 2cb9b0751a6f3894cbb341397df33b13, type: 3}
 --- !u!1 &327545862
 GameObject:
   m_ObjectHideFlags: 0
@@ -499,7 +499,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -75, y: 52.7}
+  m_AnchoredPosition: {x: -75, y: 52.699997}
   m_SizeDelta: {x: 300, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &684991830
@@ -1339,6 +1339,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: musician
+      objectReference: {fileID: 0}
+    - target: {fileID: 2856066024534257126, guid: 5c75dbc02a5388242969cf474db14ec8,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2856066024534257127, guid: 5c75dbc02a5388242969cf474db14ec8,
         type: 3}
