@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 23579725177664088}
   - component: {fileID: 65569984092380234}
   - component: {fileID: 54157987518180096}
+  - component: {fileID: 95353018}
   m_Layer: 6
   m_Name: CarboardBox_1(Physics)
   m_TagString: pickup
@@ -33,7 +34,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &33222977125096512
 MeshFilter:
@@ -133,3 +134,22 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!114 &95353018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1192641458597302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be3d9f958a9607b4686aaca6346cd2a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  badEndThreshold: 0
+  disableWhenEnding:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  goodEnding: {fileID: 0}
+  badEnding: {fileID: 0}
